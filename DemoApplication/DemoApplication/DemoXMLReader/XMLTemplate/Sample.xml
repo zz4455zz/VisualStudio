@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<RootTag>
+    <Product>
+        <Name>Product001</Name>
+        <Price Currency = "NT">100</Price>
+    </Product>
+	<Product>
+        <Name>Product002</Name>
+        <Price Currency = "YEN">300</Price>
+    </Product>
+  <Provider>Provider</Provider>
+</RootTag>
