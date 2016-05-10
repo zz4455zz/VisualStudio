@@ -1,7 +1,7 @@
 ﻿
 Imports System.Configuration
 Imports System.Data.SqlClient
-Imports System.IO
+
 Public Class frmMain
 
     Private SQL_CON As String = ConfigurationManager.ConnectionStrings("SQLConnection").ConnectionString

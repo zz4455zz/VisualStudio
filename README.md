@@ -5,6 +5,8 @@
 //** Author			: Eric 
 //**********************************************************************************
 
+viii.	[Add] DemoMySQL
+
 vii.	[Add] DemoSQLServer
 
 vi.		[Add] DemoExcelEditor
