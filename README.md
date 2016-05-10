@@ -5,14 +5,16 @@
 //** Author			: Eric 
 //**********************************************************************************
 
-vi.	[Add] DemoExcelEditor
+vii.	[Add] DemoSQLServer
 
-v.	[Add] DemoProgressBar
+vi.		[Add] DemoExcelEditor
 
-iv.	[Add] DemoXMLReader
+v.		[Add] DemoProgressBar
 
-iii.[Add] DemoOverrideCloseEvent
+iv.		[Add] DemoXMLReader
 
-ii.	[Add] DemoLog4Net_NoConfigFile
+iii.	[Add] DemoOverrideCloseEvent
 
-i.	[Add] DemoLog4Net
+ii.		[Add] DemoLog4Net_NoConfigFile
+
+i.		[Add] DemoLog4Net

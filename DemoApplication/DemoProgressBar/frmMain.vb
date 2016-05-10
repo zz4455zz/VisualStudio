@@ -4,6 +4,8 @@ Public Class frmMain
 
     Dim timer As Timer
 
+    Dim progressView As frmProgressBar
+
     Private Const WAIT_TIME As Integer = 2000
 
     Private Const LOG_TAG As String = "BAR"
@@ -43,6 +45,15 @@ Public Class frmMain
         LogBox("==== Demo3 STR ====")
 
         ProgressBarDemo3()
+
+        LogBox("==== Demo3 END ====")
+    End Sub
+
+
+    Private Sub btnDemo4_Click(sender As Object, e As EventArgs) Handles btnDemo4.Click
+        LogBox("==== Demo3 STR ====")
+
+        ProgressBarDemo4()
 
         LogBox("==== Demo3 END ====")
     End Sub
@@ -96,6 +107,23 @@ Public Class frmMain
         Dim LoopThread = New System.Threading.Thread(AddressOf RunLoop)
         LoopThread.Start()
 
+    End Sub
+
+    Private Sub ProgressBarDemo4()
+
+        progressView = New frmProgressBar(1000, 0, 1, "Demo4")
+        progressView.Show()
+
+        For idx = 1 To 1000
+            LogBoxThread(LOG_TAG, String.Format("{0,-4} / {1,4}", idx, 1000))
+            progressView.NextStep()
+        Next
+
+    End Sub
+
+    Private Sub test()
+        progressView = New frmProgressBar(1000, 0, 1, "Demo4")
+        progressView.Show()
     End Sub
 
     Private Sub ProgressBarInitial()

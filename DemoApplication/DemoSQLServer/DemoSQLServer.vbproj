@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A52ADC0E-A194-471C-BCA7-7322DDB4BDD1}</ProjectGuid>
+    <ProjectGuid>{741A6589-1605-4DBB-A5E6-1C8DDA9E5B32}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>DemoProgressBar.My.MyApplication</StartupObject>
-    <RootNamespace>DemoProgressBar</RootNamespace>
-    <AssemblyName>DemoProgressBar</AssemblyName>
+    <StartupObject>DemoSQLServer.My.MyApplication</StartupObject>
+    <RootNamespace>DemoSQLServer</RootNamespace>
+    <AssemblyName>DemoSQLServer</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>DemoProgressBar.xml</DocumentationFile>
+    <DocumentationFile>DemoSQLServer.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>DemoProgressBar.xml</DocumentationFile>
+    <DocumentationFile>DemoSQLServer.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -79,12 +80,7 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProgressBar.Designer.vb">
-      <DependentUpon>frmProgressBar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmProgressBar.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Helper\SQLHelper.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,9 +100,6 @@
   <ItemGroup>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmProgressBar.resx">
-      <DependentUpon>frmProgressBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -29,6 +29,7 @@ Partial Class frmMain
         Me.pgbBar = New System.Windows.Forms.ProgressBar()
         Me.btnDemo2 = New System.Windows.Forms.Button()
         Me.btnDemo3 = New System.Windows.Forms.Button()
+        Me.btnDemo4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnExit
@@ -120,11 +121,26 @@ Partial Class frmMain
         Me.btnDemo3.Text = "Demo"
         Me.btnDemo3.UseVisualStyleBackColor = False
         '
+        'btnDemo4
+        '
+        Me.btnDemo4.BackColor = System.Drawing.Color.White
+        Me.btnDemo4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnDemo4.FlatAppearance.BorderSize = 2
+        Me.btnDemo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDemo4.Font = New System.Drawing.Font("MS UI Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.btnDemo4.Location = New System.Drawing.Point(472, 120)
+        Me.btnDemo4.Name = "btnDemo4"
+        Me.btnDemo4.Size = New System.Drawing.Size(100, 30)
+        Me.btnDemo4.TabIndex = 104
+        Me.btnDemo4.Text = "Demo"
+        Me.btnDemo4.UseVisualStyleBackColor = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(584, 261)
+        Me.Controls.Add(Me.btnDemo4)
         Me.Controls.Add(Me.btnDemo3)
         Me.Controls.Add(Me.btnDemo2)
         Me.Controls.Add(Me.pgbBar)
@@ -149,4 +165,5 @@ Partial Class frmMain
     Friend WithEvents pgbBar As ProgressBar
     Friend WithEvents btnDemo2 As Button
     Friend WithEvents btnDemo3 As Button
+    Friend WithEvents btnDemo4 As Button
 End Class
